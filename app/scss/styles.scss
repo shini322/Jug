@@ -113,8 +113,7 @@
 .modal{
     position: absolute;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    justify-content: center;    
     width: 100%;
     height: 100%;
     top: 0;
@@ -125,7 +124,7 @@
     &__body{
         padding: 87px 56px 107px 80px;
         @include for-md{
-            padding: 0; 
+            padding: 20px;
         }
     }
     &__inner{
