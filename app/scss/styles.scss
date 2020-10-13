@@ -3,10 +3,6 @@
 @import "_global";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
-a{
-    cursor: pointer;
-}
-
 .main-container{
     padding-bottom: 20px;   
     &__inner{
@@ -77,8 +73,11 @@ a{
     &__right-block{
         display: flex;
         @include for-md{
-            margin-bottom: -22px;
+            margin-bottom: -160px;
             justify-content: flex-end;
+        }
+        @include for-md-mob{
+            margin-bottom: -22px;
         }
     }
     &__img{
@@ -88,7 +87,7 @@ a{
         }
         @include for-lg{
             align-self: center;
-            width: 500px;
+            width: 427px;
         }
         @include for-md{
             margin-top: 50px;
@@ -154,6 +153,10 @@ a{
             display: flex;
             justify-content: center;
         }
+        @include for-sm{
+            font-size: 20px;
+            line-height: 26px;
+        }
         @include for-md-mob{
             margin-top: 36px;
             font-size: 14px;
@@ -215,6 +218,8 @@ a{
 
 .subscribe{
     @include for-md{
+        display: flex;
+        flex-direction: column;
         order: 2;
         padding: 0;
         border: none;
@@ -227,10 +232,12 @@ a{
         align-items: center;
     }
     &__form{
+        max-width: 505px;
+        width: 100%;
         position: relative;
         margin-top: 150px;
         @include for-md{
-            margin-top: 37px;
+            margin: 37px auto 0;
         }
     }
     &__input{
@@ -244,7 +251,7 @@ a{
         &::placeholder{
             color: rgba($color: $black, $alpha: .32);
         } 
-        @include for-md-mob{
+        @include for-sm{
             padding: 0 14px;
             min-height: 46px;
             font-size: 11px;
@@ -261,7 +268,7 @@ a{
         background-color: $white;
         max-width: 161px;
         color: $black;
-        @include for-md-mob{
+        @include for-sm{
             max-width: 103px;
             padding: 13px 0;
             font-size: 11px;
@@ -274,7 +281,7 @@ a{
          @include for-md{
             margin-top: 18.54px;
         }
-        @include for-md-mob{
+        @include for-sm{
             font-size: 10px;
             line-height: 15px;
         }
@@ -296,7 +303,7 @@ a{
     z-index: 1;   
     // margin-top: 150px;
     background-color: $white;
-    @include for-md-mob{
+    @include for-sm{
         // margin-top: 42px;        
     }
     &__inner{
@@ -304,7 +311,7 @@ a{
     }
     &__subtitle{
         text-align: center;
-        @include for-md-mob{
+        @include for-sm{
             display: flex;
             align-items: center;
             text-align: left;
@@ -321,7 +328,7 @@ a{
         border-radius: 50%;
         border: 1px solid $black;
         flex-shrink: 0;
-        @include for-md-mob{
+        @include for-sm{
             display: flex;
         }
     }
@@ -338,7 +345,7 @@ a{
         padding-top: 70px;
         flex-direction: column;
         align-items: center;
-        @include for-md-mob{
+        @include for-sm {
             padding-top: 40px;
         } 
     }
@@ -361,11 +368,11 @@ a{
         }
         &+&{
             margin-top: 20px;
-            @include for-md-mob{
+            @include for-sm {
                 margin-top: 10px;
             }
         }
-        @include for-md-mob{
+        @include for-sm {
             padding: 7.5px 5px;
             font-size: 12px;
             line-height: 16px;
