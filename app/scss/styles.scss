@@ -175,6 +175,7 @@
     }
     
 }
+
 .modal-container{
     position: relative;
     padding: 56px 25px 40px;
@@ -232,12 +233,12 @@
         align-items: center;
     }
     &__form{
-        max-width: 505px;
+        margin: 150px auto 0;
         width: 100%;
         position: relative;
-        margin-top: 150px;
         @include for-md{
             margin: 37px auto 0;
+            max-width: 505px;
         }
     }
     &__input{
