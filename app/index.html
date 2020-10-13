@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/libs.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <div class="wrapper" id="wrapper">
+        <main class="main" id="main">
+            <div class="main-container">
+               <div class="container">
+                   <div class="main-container__inner">
+                       <div class="main-container__left-block">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="images/logo.svg" alt="">
+                        </a>
+                        <h1 class="page-title main-container__title">
+                            Конференции, <br> которые нужны
+                        </h1>
+                        <div class="main-container__description">
+                            <p>
+                                Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих. 
+                            </p>
+                            <p>
+                                С нас — крутая программа, топовые спикеры, технические доклады без воды.
+                            </p> 
+                            <p>
+                                С вас — готовность смотреть и общаться.
+                            </p>
+                        </div>
+                        <div class="main-container__buttons">
+                            <button class="btn btn--yellow main-container__btn" data-modal>
+                                <img class="emoji main-container__emoji" src="images/emoji/man-raising-hand.png" alt="">
+                                Купить билет 
+                            </button>
+                            <button class="btn btn--black main-container__btn">
+                                <img class="emoji main-container__emoji" src="images/emoji/man-facepalming.png" alt="">
+                                Купить билет  в жопу
+                            </button>
+                        </div>
+                       </div>
+                       <div class="main-container__right-block">
+                            <img class="main-container__img" src="images/main-img.png" alt="">
+                            <img class="main-container__gif" src="images/lines.gif" alt="">
+                       </div>
+                    
+                   </div>
+               </div>
+            </div>            
+        </main>
+        <div class="modal hide">
+            <div class="modal__body">
+                <div class="modal__inner">
+                    <div class="modal-container subscribe">                    
+                        <h4 class="subscribe__title modal-container__title">
+                            <img class="subscribe__title-img modal-container__title-img" src="images/emoji/man-raising-hand.png" alt="">
+                            Я хочу знать, когда <br>
+                            будет офлайн
+                        </h4>
+                        <form class="subscribe__form">                            
+                            <div class="subscribe__container">
+                                <input class="subscribe__input" type="email" name="email" placeholder="Укажите свой email" required>
+                                <button class="btn subscribe__submit" type="submit">
+                                    Подписаться
+                                </button>
+                            </div>
+                            <div class="subscribe__personal-data">
+                                Нажимая на кнопку вы  соглашаетесь <br> 
+                                на обработку <a class="subscribe__personal-data-link" href="#">персональных данных</a>
+                            </div>
+                            <div class="subscribe-thanks hide">
+                                <div class=" subscribe-thanks__inner">                            
+                                    <div class="subscribe-thanks__subtitle">
+                                        <div class="subscribe-thanks__check-block">
+                                            <svg class="subscribe-thanks__check-icon">
+                                                <use xlink:href="images/sprite.svg#check"></use>
+                                            </svg>
+                                        </div>                                    
+                                        Спасибо, что подписались на нашу рассылку!
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <div class="modal-container complaint">
+                        <div class="complaint-thanks hide">
+                            <div class="complaint-thanks__inner">
+                                <img class="complaint-thanks__img" src="images/emoji/like.png" alt="">
+                                <div class="complaint-thanks__title">
+                                    Спасибо, что поделились!
+                                </div>
+                            </div>                        
+                        </div>
+                        <h4 class="complaint__title modal-container__title">
+                            <img class="complaint__title-img modal-container__title-img" src="images/emoji/man-facepalming.png" alt="">
+                            Идите в жопу!
+                        </h4>
+                        <div class="complaint__body">
+                            <div class="complaint__item">
+                                Вы свои цены видели?
+                            </div>
+                            <div class="complaint__item">
+                                Доклады ни о чем
+                            </div>
+                            <div class="complaint__item">
+                                У вас там всё хорошо?
+                            </div>
+                            <div class="complaint__item">
+                                Денег нет, но вы держитесь
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="modal__close" href="#" data-close>
+                    <svg class="modal__close-icon">
+                        <use xlink:href="images/sprite.svg#arrow-left"></use>
+                    </svg>
+                    Я кликнул просто посмотреть
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
